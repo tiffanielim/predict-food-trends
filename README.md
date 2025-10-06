@@ -1,11 +1,11 @@
-# 🍕 Food Trend Predictor
+# Food Trend Predictor
 
 An end-to-end machine learning pipeline that processes 100K+ Reddit posts to predict trending foods with 80%+ precision using BERT and XGBoost.
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 🎯 Features
+## Features
 
 - **Data Pipeline**: Automated ETL processing of 100K+ Reddit posts from 23 food-related subreddits
 - **ML Model**: Hybrid BERT + XGBoost architecture achieving 80%+ precision
@@ -57,7 +57,7 @@ An end-to-end machine learning pipeline that processes 100K+ Reddit posts to pre
 └─────────────────────────────────┘
 ```
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -147,33 +147,33 @@ streamlit run dashboard.py
 
 Access at: `http://localhost:8501`
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 The interactive dashboard provides:
 
-### 🔥 Trending Now
+### Trending Now
 - Top trending foods with engagement metrics
 - Real-time rankings and scores
 - Visual trend indicators
 
-### 📈 Analytics
+### Analytics
 - Time series analysis
 - Daily post volume and engagement
 - Subreddit distribution
 - Score distributions
 
-### 🤖 ML Predictions
+### ML Predictions
 - Trend probability predictions
 - High-confidence recommendations
 - Scatter plots of velocity vs probability
 - Model performance metrics
 
-### 🗺️ Subreddit Heatmap
+### Subreddit Heatmap
 - Food mentions across subreddits
 - Cross-platform trend analysis
 - Category breakdowns
 
-## 🎯 Model Performance
+## Model Performance
 
 - **Precision**: 80%+
 - **Architecture**: BERT (DistilBERT) + XGBoost
@@ -181,7 +181,7 @@ The interactive dashboard provides:
 - **Features**: 11 structured features + 768 BERT embeddings
 - **Update Frequency**: Daily retraining recommended
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 food-trend-predictor/
@@ -198,7 +198,7 @@ food-trend-predictor/
 └── README.md              # This file
 ```
 
-## 🔧 Configuration
+## Configuration
 
 Edit `config.py` to customize:
 
@@ -207,7 +207,7 @@ Edit `config.py` to customize:
 - **Feature Engineering**: Time windows, trending thresholds
 - **Dashboard Settings**: Cache duration, display limits
 
-## 📈 Use Cases
+## Use Cases
 
 ### 1. **Restaurant Menu Planning**
 - Identify trending ingredients and dishes
@@ -229,28 +229,28 @@ Edit `config.py` to customize:
 - Engage with trending topics
 - Optimize social media strategy
 
-## 🎨 Example Insights
+## Example Insights
 
 ```
-🔥 TOP TRENDING FOODS:
-1. 🥇 Kimchi       | 87.3% probability | 15.2 mentions/day
-2. 🥈 Açaí Bowl    | 84.1% probability | 12.8 mentions/day
-3. 🥉 Sourdough    | 81.5% probability | 11.4 mentions/day
+TOP TRENDING FOODS:
+1. Kimchi       | 87.3% probability | 15.2 mentions/day
+2. Açaí Bowl    | 84.1% probability | 12.8 mentions/day
+3. Sourdough    | 81.5% probability | 11.4 mentions/day
 
-📊 CATEGORY TRENDS:
+CATEGORY TRENDS:
 Asian        | Avg: 78.2% | 5 trending items | Top: Kimchi
 Plant-based  | Avg: 72.5% | 3 trending items | Top: Tofu
 Healthy      | Avg: 68.9% | 4 trending items | Top: Açaí
 
-💡 ACTIONABLE INSIGHTS:
-✅ 12 foods with high trending potential
-   Recommend immediate menu consideration for:
-   • Kimchi
-   • Açaí Bowl
-   • Sourdough Bread
+ACTIONABLE INSIGHTS:
+12 foods with high trending potential
+Recommend immediate menu consideration for:
+• Kimchi
+• Açaí Bowl
+• Sourdough Bread
 ```
 
-## 🔄 Workflow
+## Workflow
 
 ### Daily Operations
 
@@ -274,7 +274,7 @@ python predict_service.py report
 streamlit run dashboard.py
 ```
 
-## 🛠️ Advanced Features
+## Advanced Features
 
 ### Custom Food Categories
 Add your own categories in `config.py`:
@@ -302,7 +302,7 @@ FOOD_SUBREDDITS = [
 ]
 ```
 
-## 📊 Database Schema
+## Database Schema
 
 The system uses three main tables:
 
@@ -313,51 +313,13 @@ The system uses three main tables:
 
 See `database_schema.sql` for full schema.
 
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-
-- [ ] Additional ML models (LSTM, Transformer ensembles)
-- [ ] Multi-language support
-- [ ] Twitter/Instagram integration
-- [ ] Image analysis (food photos)
-- [ ] Sentiment analysis
-- [ ] Geographic trend analysis
-
-## 📝 License
-
-MIT License - feel free to use for commercial or personal projects.
-
-## 🙏 Acknowledgments
+## Tools
 
 - **PRAW**: Reddit API wrapper
 - **Supabase**: Database and backend
 - **Hugging Face**: BERT models
 - **XGBoost**: Gradient boosting library
 - **Streamlit**: Dashboard framework
-
-## 📞 Support
-
-For issues or questions:
-- Create an issue in the repository
-- Check existing documentation
-- Review configuration settings
-
-## 🚦 Status
-
-- ✅ ETL Pipeline
-- ✅ Data Processing
-- ✅ ML Model (BERT + XGBoost)
-- ✅ Prediction Service
-- ✅ Analytics Dashboard
-- ✅ Database Schema
-
-## 📅 Roadmap
-
-- **Q4 2025**: Add sentiment analysis
-- **Q1 2026**: Multi-platform integration
-- **Q2 2026**: Geographic analysis
-- **Q3 2026**: Automated reporting
 
 ---
 
