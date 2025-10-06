@@ -90,7 +90,7 @@ cat database_schema.sql
 # Copy and execute in Supabase dashboard
 ```
 
-## 🚀 Usage
+## Usage
 
 ### 1. Data Collection
 
